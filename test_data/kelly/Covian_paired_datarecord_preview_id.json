@@ -1,0 +1,137 @@
+{
+    "version": "1",
+    "personal": {
+        "submitter_name": "Kelly Weldon",
+        "submitter_orcid": "https://orcid.org/0000-0003-1064-8153",
+        "submitter_email": "kcweldon@eng.ucsd.edu",
+        "PI_name": "Pieter C. Dorrestein",
+        "PI_institution": "University of California, San Diego",
+        "PI_email": "pdorrestein@health.ucsd.edu"
+    },
+    "metabolomics": {
+        "project": {
+            "GNPSMassIVE_ID": "MSV000083302",
+            "MaSSIVE_URL": "https://massive.ucsd.edu/ProteoSAFe/dataset.jsp?task=ef195e6569004a14a47560f7619e8591",
+            "molecular_network": "6379dfdb0f7d4c31b75afd14c8f36778"
+        }
+    },
+    "experimental": {
+        "sample_preparation": [
+            {
+                "medium_details": {
+                    "medium_type": "metagenome",
+                    "metagenomic_environment": "https://bioportal.bioontology.org/ontologies/MEO/?p=classes&conceptid=http%3A%2F%2Fpurl.jp%2Fbio%2F11%2Fmeo%2FMEO_0000395",
+                    "metagenomic_sample_description": "Mus musculus fecal pellet"
+                },
+                "growth_parameters": {},
+                "aeration": {},
+                "sample_preparation_method": "metagenomic_mouse_fecal"
+            }
+        ],
+        "extraction_methods": [
+            {
+                "solvents": [
+                    {
+                        "ratio": 0.5,
+                        "solvent": "http://purl.obolibrary.org/obo/CHEBI_17790"
+                    },
+                    {
+                        "ratio": 0.5,
+                        "solvent": "http://purl.obolibrary.org/obo/CHEBI_15377"
+                    }
+                ],
+                "extracted_material": "supernatant",
+                "extraction_method": "SeedGrant_Extraction"
+            }
+        ],
+        "instrumentation_methods": [
+            {
+                "instrumentation": {
+                    "instrument": "http://purl.obolibrary.org/obo/MS_1000084"
+                },
+                "column": "Reverse Phase",
+                "mode": "http://purl.obolibrary.org/obo/MS_1000130",
+                "ionization": {
+                    "ionization_type": "http://purl.obolibrary.org/obo/MS_1000073"
+                },
+                "range": "150-1500",
+                "buffering": "0.1% Formic Acid",
+                "instrumentation_method": "Seed Grant TOF"
+            }
+        ]
+    },
+    "genomes": [
+        {
+            "genome_ID": {
+                "genome_type": "metagenome",
+                "ENA_NCBI_accession": "ERS4356233"
+            },
+            "genome_label": "11927.Het11w12"
+        },
+        {
+            "genome_ID": {
+                "genome_type": "metagenome",
+                "ENA_NCBI_accession": "ERS4356234"
+            },
+            "genome_label": "11927.Het11w24"
+        },
+        {
+            "genome_ID": {
+                "genome_type": "metagenome",
+                "ENA_NCBI_accession": "ERS4356235"
+            },
+            "genome_label": "11927.Het11w3"
+        },
+        {
+            "genome_ID": {
+                "genome_type": "metagenome",
+                "ENA_NCBI_accession": "ERS4356236"
+            },
+            "genome_label": "11927.Het11w6"
+        },
+        {
+            "genome_ID": {
+                "genome_type": "metagenome",
+                "ENA_NCBI_accession": "ERS4356237"
+            },
+            "genome_label": "11927.Het12w12"
+        }
+    ],
+    "genome_metabolome_links": [
+        {
+            "genome_label": "11927.Het11w12",
+            "metabolomics_file": "ftp://massive.ucsd.edu/MSV000083302/peak/mzxml/S96_RE2_01_40404.mzXML",
+            "sample_preparation_label": "metagenomic_mouse_fecal",
+            "extraction_method_label": "SeedGrant_Extraction",
+            "instrumentation_method_label": "Seed Grant TOF"
+        },
+        {
+            "genome_label": "11927.Het11w24",
+            "metabolomics_file": "ftp://massive.ucsd.edu/MSV000083302/peak/mzxml/S97_BD5_01_40345.mzXML",
+            "sample_preparation_label": "metagenomic_mouse_fecal",
+            "extraction_method_label": "SeedGrant_Extraction",
+            "instrumentation_method_label": "Seed Grant TOF"
+        },
+        {
+            "genome_label": "11927.Het11w3",
+            "metabolomics_file": "ftp://massive.ucsd.edu/MSV000083302/peak/mzxml/S94_RD7_01_40399.mzXML",
+            "sample_preparation_label": "metagenomic_mouse_fecal",
+            "extraction_method_label": "SeedGrant_Extraction",
+            "instrumentation_method_label": "Seed Grant TOF"
+        },
+        {
+            "genome_label": "11927.Het11w6",
+            "metabolomics_file": "ftp://massive.ucsd.edu/MSV000083302/peak/mzxml/S95_RE6_01_40408.mzXML",
+            "sample_preparation_label": "metagenomic_mouse_fecal",
+            "extraction_method_label": "SeedGrant_Extraction",
+            "instrumentation_method_label": "Seed Grant TOF"
+        },
+        {
+            "genome_label": "11927.Het12w12",
+            "metabolomics_file": "ftp://massive.ucsd.edu/MSV000083302/peak/mzxml/S100_RD8_01_40295.mzXML",
+            "sample_preparation_label": "metagenomic_mouse_fecal",
+            "extraction_method_label": "SeedGrant_Extraction",
+            "instrumentation_method_label": "Seed Grant TOF"
+        }
+    ]
+}
