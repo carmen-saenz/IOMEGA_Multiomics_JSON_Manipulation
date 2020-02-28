@@ -1,0 +1,105 @@
+{
+    "version": "1",
+    "personal": {
+        "submitter_name": "Asker Brejnrod",
+        "submitter_orcid": "https://orcid.org/0000-0002-1327-2051",
+        "submitter_email": "askerbrejnrod@gmail.com",
+        "PI_name": "Pieter Dorrestein",
+        "PI_institution": "UCSD",
+        "PI_email": "pdorrestein@ucsd.edu"
+    },
+    "metabolomics": {
+        "project": {
+            "GNPSMassIVE_ID": "MSV000080179",
+            "MaSSIVE_URL": "https://gnps.ucsd.edu/ProteoSAFe/result.jsp?task=af19e363ff71492bb2ba1a7370f36dd0&view=advanced_view",
+            "molecular_network": "9bd16822c8d448f59a03e6cc8f017f43"
+        },
+        "publications": "29795809"
+    },
+    "experimental": {
+        "sample_preparation": [
+            {
+                "medium_details": {
+                    "medium_type": "metagenome",
+                    "metagenomic_environment": "https://bioportal.bioontology.org/ontologies/MEO/?p=classes&conceptid=http%3A%2F%2Fpurl.jp%2Fbio%2F11%2Fmeo%2FMEO_0000393",
+                    "metagenomic_sample_description": "American gut subject"
+                },
+                "growth_parameters": {
+                    "growth_phase_OD": "NA"
+                },
+                "aeration": {
+                    "aeration_type": "not shaking"
+                },
+                "sample_preparation_method": "Metagenome"
+            }
+        ],
+        "extraction_methods": [
+            {
+                "extracted_material": "complex",
+                "solvents": [
+                    {
+                        "ratio": 0.9,
+                        "solvent": "http://purl.obolibrary.org/obo/CHEBI_16236"
+                    },
+                    {
+                        "ratio": 0.1,
+                        "solvent": "http://purl.obolibrary.org/obo/CHEBI_15377"
+                    }
+                ],
+                "extraction_method": "Ethanol extraction"
+            }
+        ],
+        "instrumentation_methods": [
+            {
+                "instrumentation": {
+                    "instrument": "http://purl.obolibrary.org/obo/MS_1000084"
+                },
+                "column": "Reverse Phase",
+                "mode": "http://purl.obolibrary.org/obo/MS_1000130",
+                "ionization": {
+                    "ionization_type": "http://purl.obolibrary.org/obo/MS_1000073"
+                },
+                "range": "80-2000",
+                "collision_energy": "3 ",
+                "buffering": "0.1% formic acid",
+                "instrumentation_method": "TOF"
+            }
+        ]
+    },
+    "genomes": [
+        {
+            "genome_ID": {
+                "genome_type": "metagenome",
+                "ENA_NCBI_accession": "SAME1"
+            },
+            "BioSample_accession": "SAMe1",
+            "publications": "29795809",
+            "genome_label": "test1"
+        },
+        {
+            "genome_ID": {
+                "genome_type": "metagenome",
+                "ENA_NCBI_accession": "SAME2"
+            },
+            "BioSample_accession": "SAMe2",
+            "publications": "29795809",
+            "genome_label": "test2"
+        }
+    ],
+    "genome_metabolome_links": [
+        {
+            "genome_label": "test1",
+            "metabolomics_file": "ftp://massive.ucsd.edu/MSV000080179/peak/mzXMLs/10125_P1_RA12_01_49.mzXML",
+            "sample_preparation_label": "Metagenome",
+            "extraction_method_label": "Ethanol extraction",
+            "instrumentation_method_label": "TOF"
+        },
+        {
+            "genome_label": "test2",
+            "metabolomics_file": "ftp://massive.ucsd.edu/MSV000080179/peak/mzXMLs/10125_P1_RA12_01_29.mzXML",
+            "sample_preparation_label": "Metagenome",
+            "extraction_method_label": "Ethanol extraction",
+            "instrumentation_method_label": "TOF"
+        }
+    ]
+}
